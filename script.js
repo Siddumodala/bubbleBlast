@@ -2,7 +2,7 @@
 var score = 0;
 function bubbleMaker(){
     var clutter = "";
-    for(var i=1;i<=72;i++){
+    for(var i=1;i<=220;i++){
         var id = Math.floor(Math.random()*10);
         clutter += `<div class="bubble">${id}</div>`;
     }
