@@ -1,8 +1,10 @@
 
 var score = 0;
+const windowWidth = Math.floor(window.innerWidth/60);
+const windowHeight = Math.floor(window.innerHeight/60);
 function bubbleMaker(){
     var clutter = "";
-    for(var i=1;i<=220;i++){
+    for(var i=1;i<=windowWidth*windowHeight;i++){
         var id = Math.floor(Math.random()*10);
         clutter += `<div class="bubble">${id}</div>`;
     }
